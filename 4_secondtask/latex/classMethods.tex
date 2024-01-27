@@ -1,0 +1,95 @@
+\hypertarget{classMethods}{}\doxysection{Класс Methods}
+\label{classMethods}\index{Methods@{Methods}}
+
+
+Класс, реализующий шифрование методом табличной маршрутной перестановки.  
+
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMethods_ac704664a0e9d865ed97668ebeb1d81a9}\label{classMethods_ac704664a0e9d865ed97668ebeb1d81a9}} 
+\mbox{\hyperlink{classMethods_ac704664a0e9d865ed97668ebeb1d81a9}{Methods}} ()=delete
+\begin{DoxyCompactList}\small\item\em Запрет конструктора без параметров. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMethods_ab4d8cc64928b1119d38fe60ee28805ee}{Methods}} (const int key)
+\begin{DoxyCompactList}\small\item\em Конструктор для установки ключа. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classMethods_a779c56e22eaff5b9908946cd32bb1f64}{Encrypt}} (string str)
+\begin{DoxyCompactList}\small\item\em Зашифрование. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classMethods_ae3420d070881dc176bcfecfe3b089ce2}{Decrypt}} (string str)
+\begin{DoxyCompactList}\small\item\em Расшифрование. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс, реализующий шифрование методом табличной маршрутной перестановки. 
+
+Ключ устанавливается в конструкторе. Для зашифровывания и расшифровывания предназначены методы Encrypt и Decrypt. \begin{DoxyWarning}{Предупреждения}
+Реализация только для английского языка. 
+\end{DoxyWarning}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classMethods_ab4d8cc64928b1119d38fe60ee28805ee}\label{classMethods_ab4d8cc64928b1119d38fe60ee28805ee}} 
+\index{Methods@{Methods}!Methods@{Methods}}
+\index{Methods@{Methods}!Methods@{Methods}}
+\doxysubsubsection{\texorpdfstring{Methods()}{Methods()}}
+{\footnotesize\ttfamily Methods\+::\+Methods (\begin{DoxyParamCaption}\item[{const int}]{key }\end{DoxyParamCaption})}
+
+
+
+Конструктор для установки ключа. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & Ключ. Должен быть целочисленным числом. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classMethods_ae3420d070881dc176bcfecfe3b089ce2}\label{classMethods_ae3420d070881dc176bcfecfe3b089ce2}} 
+\index{Methods@{Methods}!Decrypt@{Decrypt}}
+\index{Decrypt@{Decrypt}!Methods@{Methods}}
+\doxysubsubsection{\texorpdfstring{Decrypt()}{Decrypt()}}
+{\footnotesize\ttfamily string Methods\+::\+Decrypt (\begin{DoxyParamCaption}\item[{string}]{str }\end{DoxyParamCaption})}
+
+
+
+Расшифрование. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em str} & Текст на английском языке. Может содержать цифры и буквы верхнего регистра. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Предупреждения}
+Зашифрованный текст не должен быть пустой строкой, не должен содержать пробелы, символы пунктуации и буквы нижнего регистра. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованный текст 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMethods_a779c56e22eaff5b9908946cd32bb1f64}\label{classMethods_a779c56e22eaff5b9908946cd32bb1f64}} 
+\index{Methods@{Methods}!Encrypt@{Encrypt}}
+\index{Encrypt@{Encrypt}!Methods@{Methods}}
+\doxysubsubsection{\texorpdfstring{Encrypt()}{Encrypt()}}
+{\footnotesize\ttfamily string Methods\+::\+Encrypt (\begin{DoxyParamCaption}\item[{string}]{str }\end{DoxyParamCaption})}
+
+
+
+Зашифрование. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em str} & Текст на английском языке. Может содержать цифры и буквы верхнего регистра. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Предупреждения}
+Текст не должен быть пустой строкой, не должен содержать пробелы, символы пунктуации и буквы нижнего регистра. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованный текст 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}
